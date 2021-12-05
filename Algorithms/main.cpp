@@ -6,14 +6,18 @@
 
 int main()
 {
-	std::cout << "Hello World!" << std::endl;
-
 	std::vector<int> v{ 13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7 };
-	std::array<int, 3> res{ MaxSumSubarray::bruteForce(v) };
-
 	printArray<int>(v.data(), v.size());
-	printSubarray<int>(v.data(), res[0], res[1], v.size());
-	printArray<int>(res.data(), res.size());
+
+	std::cout << "Brute Force" << std::endl;
+	std::array<int, 3> bruteForceRes{ MaxSumSubarray::bruteForce(v) };
+	printSubarray<int>(v.data(), bruteForceRes[0], bruteForceRes[1], v.size());
+	printArray<int>(bruteForceRes.data(), bruteForceRes.size());
+
+	std::cout << "Divide And Rule" << std::endl;
+	std::array<int, 3> divideAndRuleRes{ MaxSumSubarray::divide_and_rule(v) };
+	printSubarray<int>(v.data(), divideAndRuleRes[0], divideAndRuleRes[1], v.size());
+	printArray<int>(divideAndRuleRes.data(), divideAndRuleRes.size());
 
 	return 0;
 }
