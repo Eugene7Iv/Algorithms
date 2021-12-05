@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <array>
-#include "divide_and_rule/MaxSumSubarray.h"
+#include "divide_and_conquer/MaxSumSubarray.h"
 #include "utils.h"
 
 int main()
@@ -15,9 +15,9 @@ int main()
 	printArray<int>(bruteForceRes.data(), bruteForceRes.size());
 
 	std::cout << "Divide And Rule" << std::endl;
-	std::array<int, 3> divideAndRuleRes{ MaxSumSubarray::divide_and_rule(v) };
-	printSubarray<int>(v.data(), divideAndRuleRes[0], divideAndRuleRes[1], v.size());
-	printArray<int>(divideAndRuleRes.data(), divideAndRuleRes.size());
+	std::array<int, 3> divideAndConquerRes{ MaxSumSubarray::divide_and_conquer(v) };
+	printSubarray<int>(v.data(), divideAndConquerRes[0], divideAndConquerRes[1], v.size());
+	printArray<int>(divideAndConquerRes.data(), divideAndConquerRes.size());
 
 	return 0;
 }

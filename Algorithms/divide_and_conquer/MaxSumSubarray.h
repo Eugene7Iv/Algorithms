@@ -96,7 +96,7 @@ namespace MaxSumSubarray
 		}
 	}
 
-	return_type divide_and_rule(const std::vector<int>& v)
+	return_type divide_and_conquer(const std::vector<int>& v)
 	{
 		return find_max_subarray(v, 0, v.size() - 1);
 	}

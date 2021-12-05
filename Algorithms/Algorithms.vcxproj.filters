@@ -18,7 +18,7 @@
     <ClInclude Include="utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="divide_and_rule\MaxSumSubarray.h">
+    <ClInclude Include="divide_and_conquer\MaxSumSubarray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
