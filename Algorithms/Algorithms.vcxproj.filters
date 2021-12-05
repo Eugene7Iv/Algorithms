@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MaxSumSubarray.h">
+    <ClInclude Include="utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="utils.h">
+    <ClInclude Include="divide_and_rule\MaxSumSubarray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
