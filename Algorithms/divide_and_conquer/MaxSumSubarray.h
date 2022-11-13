@@ -25,8 +25,8 @@ namespace MaxSumSubarray
 
 		for (int i = 0; i < v.size(); i++)
 		{
-			int curSum = v[i];
-			for (int j = i + 1; j < v.size(); j++)
+			int curSum = 0;
+			for (int j = i; j < v.size(); j++)
 			{
 				curSum += v[j];
 				if (curSum >= sum)
